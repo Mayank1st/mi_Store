@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MI_Store</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #logo {
+            height: 5vh;
+            width: 5vh;
+        }
+
+        .left-side {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            display: inline-block;
+        }
+
+        .nav-span-left {
+            padding: 10px;
+            margin-left: 10px;
+        }
+
+        .right-side {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            display: inline-block;
+            position: relative;
+            left: 590px;
+        }
+
+        .nav-span-right {
+            padding: 10px;
+            margin-left: 10px;
+        }
+
+        #slider {
+            width: 100%;
+        }
+
+        .banner-div {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .banner-div img {
+            display: inline-block;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+        }
+
+        .flex-container>div {
+            background-color: #f1f1f1;
+            height: 224px;
+            width: 228px;
+            margin: 10px;
+            text-align: center;
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .store-goods-inner {
+            display: inline-block;
+            height: 80%;
+            width: 80%;
+            text-align: left;
+            padding-left: 30px;
+            padding-top: 20px;
+        }
+
+        .store-goods-label {
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            display: block;
+            width: fit-content;
+        }
+
+        .store-goods-tag {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #ff6900;
+            font-size: 12px;
+            padding: 3px 8px;
+            border: solid #ff6900 1px;
+            border-radius: 3px;
+            background-color: #fff0e5;
+            font-weight: 600;
+            position: relative;
+            bottom: 30px;
+        }
+        .store-goods-label-bottom {
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            display: block;
+            width: fit-content;
+            text-align: left;
+        }
+        .store-goods-tag-bottom{
+            position: relative;
+            bottom:60px;
+            left:60px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <div style="padding-left: 30px; padding-right: 20px;">
+                <img id="logo"
+                    src="https://w7.pngwing.com/pngs/563/15/png-transparent-xiaomi-logo-mobile-social-social-media-social-media-logos-icon-thumbnail.png">
+                <div class="left-side">
+                    <span class="nav-span-left">Store</span>
+                    <span class="nav-span-left">Phone</span>
+                    <span class="nav-span-left">TV & Smart Home</span>
+                    <span class="nav-span-left">Life Style</span>
+                </div>
+                <div class="right-side">
+                    <span class="nav-span-right">Discover</span>
+                    <span class="nav-span-right"><i class="fa-solid fa-magnifying-glass"
+                            style="color: #000000;"></i></span>
+                    <span class="nav-span-right"><i class="fa-solid fa-cart-shopping"
+                            style="color: #000000;"></i></span>
+                    <span class="nav-span-right"><i class="fa-solid fa-user" style="color: #000000;"></i></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Slider -->
+    <img id="slider" src="./slider.png" alt="slider">
+
+    <!-- Banner -->
+    <div class="banner-div">
+        <img src="./Banner.png" alt="Banner">
+    </div>
+
+    <!-- Store-Goods -->
+
+    <div class="flex-container">
+        <div>
+            <span class="store-goods-inner">
+                <span class="store-goods-label">Redmi 13c</span><br>
+                <span class="store-goods-tag">35% off</span>
+                <span class="store-goods-label-bottom">From<br>7699</span>
+                <span class="store-goods-tag-bottom"><img src="./m1.png" alt=""></span>
+            </span>
+        </div>
+        <div>
+            <span class="store-goods-inner">
+                <span class="store-goods-label">Redmi 13c</span><br>
+                <span class="store-goods-tag">35% off</span>
+                <span class="store-goods-label-bottom">From<br>7699</span>
+                <span class="store-goods-tag-bottom"><img src="./m2.png" alt=""></span>
+            </span>
+        </div>
+        <div>
+            <span class="store-goods-inner">
+                <span class="store-goods-label">Redmi 12c</span><br>
+                <span class="store-goods-tag">35% off</span>
+                <span class="store-goods-label-bottom">From<br>7699</span>
+                <span class="store-goods-tag-bottom"><img src="./m3.png" alt=""></span>
+            </span>
+        </div>
+        <div>
+            <span class="store-goods-inner">
+                <span class="store-goods-label">Redmi 12 5G</span><br>
+                <span class="store-goods-tag">35% off</span>
+                <span class="store-goods-label-bottom">From<br>7699</span>
+                <span class="store-goods-tag-bottom"><img src="./m4.png" alt=""></span>
+            </span>
+        </div>
+    </div>
+
+    <!-- Fontawesome script -->
+    <script src="https://kit.fontawesome.com/a89a1bd747.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
